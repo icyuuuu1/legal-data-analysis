@@ -406,7 +406,7 @@ def splash():
           <summary style="cursor:pointer;color:#8a6d3b;font-weight:600;font-size:1rem;text-align:center;list-style:none;">▸ 这个工具是做什么的?</summary>
           <div style="background:#FFF3D6;border:1px solid #f0dfb8;border-radius:12px;padding:1rem 1.3rem;margin-top:0.7rem;color:#5a4526;font-size:0.95rem;line-height:1.75;">
             <div style="margin-bottom:0.7rem;">法务处理平台业务数据时,常要回答一个问题:<b>某个用户或账号,在选定期间内,涉及哪些对象、各涉及多少钱?</b>据此梳理网络合同关系、决定下一步法律动作。这个工具把「导入 → 筛选 → 分组 → 汇总 → 导出」做成可视化流程,点几下出结果。</div>
-            <div style="font-weight:700;margin-bottom:0.45rem;">适用场景 · 网络合同纠纷</div>
+            <div style="font-weight:700;margin-bottom:0.45rem;">适用场景</div>
             <ul style="margin:0;padding-left:1.25rem;">
               <li><b>直播平台</b> · 网络服务合同纠纷:汇总用户打赏金额或主播的收入,支撑退费、主播分成结算等业务动作。</li>
               <li><b>电商平台</b> · 网络购物合同纠纷:汇总订单笔数与金额,理清交易往来,支撑退款、违约、欺诈类纠纷举证。</li>

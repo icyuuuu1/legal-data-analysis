@@ -538,9 +538,12 @@ def analyze_page():
         if not numeric_cols:
             st.warning("数据中没有数值字段,无法进行数值汇总,请改用「计数」")
             return
-        val_col = st.selectbox("汇总数值字段", numeric_cols, key="val_col")
-        result = df.groupby(group_cols, as_index=False)[val_col].agg(func_map[agg_choice])
-        result = result.rename(columns={val_col: f"{agg_choice}({val_col})"})
+        val_cols = st.multiselect("汇总数值字段(可多选)", numeric_cols, key="val_cols")
+        if not val_cols:
+            st.warning("请至少选择一个数值字段,如「订单金额」「平台佣金」")
+            return
+        result = df.groupby(group_cols, as_index=False)[val_cols].agg(func_map[agg_choice])
+        result = result.rename(columns={c: f"{agg_choice}({c})" for c in val_cols})
 
     # 附加统计列(可选)
     extra_opts = ["记录笔数"]

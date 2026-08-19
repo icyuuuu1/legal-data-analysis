@@ -403,6 +403,24 @@ def splash():
 
     st.markdown(
         """
+        <details style="max-width:36rem;margin:1.3rem auto 0.2rem;text-align:left;">
+          <summary style="cursor:pointer;color:#8a6d3b;font-weight:600;font-size:1rem;text-align:center;list-style:none;">▸ 这个工具是做什么的?</summary>
+          <div style="background:#FFF3D6;border:1px solid #f0dfb8;border-radius:12px;padding:1rem 1.3rem;margin-top:0.7rem;color:#5a4526;font-size:0.95rem;line-height:1.75;">
+            <div style="margin-bottom:0.7rem;">法务处理平台业务数据时,常要回答一个问题:<b>某个用户或账号,在选定期间内,涉及哪些对象、各涉及多少钱?</b>据此梳理网络合同关系、决定下一步法律动作。这个工具把「导入 → 筛选 → 分组 → 汇总 → 导出」做成可视化流程,点几下出结果。</div>
+            <div style="font-weight:700;margin-bottom:0.45rem;">适用场景 · 网络合同纠纷</div>
+            <ul style="margin:0;padding-left:1.25rem;">
+              <li><b>直播平台</b> · 打赏退款与收益结算:汇总用户打赏主播的金额或主播的收入,支撑未成年人打赏退款、主播分成结算等网络服务合同纠纷</li>
+              <li><b>电商平台</b> · 网络购物合同纠纷:汇总订单笔数与金额,理清交易往来,支撑退款、违约、欺诈类纠纷举证</li>
+              <li><b>本地生活平台</b> · 平台合同纠纷:汇总商家订单佣金、骑手配送费、用户订单金额,支撑商户结算、配送结算、消费退款等纠纷处理</li>
+            </ul>
+          </div>
+        </details>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        """
         <style>
         [data-testid="stButton"] > button {
             font-size: 1.7rem !important;
@@ -429,7 +447,7 @@ def splash():
             st.rerun()
 
     st.markdown(
-        '<div class="splash-sub" style="font-size:0.9rem;color:#b0a080;">演示环境 · 数据临时存储 · 请勿上传敏感信息</div>',
+        '<div class="splash-sub" style="font-size:0.9rem;color:#b0a080;">演示环境 · 数据临时存储 · 建议脱敏后上传</div>',
         unsafe_allow_html=True,
     )
 

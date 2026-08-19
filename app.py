@@ -383,7 +383,6 @@ def splash():
             <line x1="98" y1="98" x2="92" y2="98" stroke="#3E2E1A" stroke-width="3"/>
             <line x1="54" y1="92" x2="40" y2="80" stroke="#3E2E1A" stroke-width="3"/>
             <line x1="136" y1="92" x2="150" y2="80" stroke="#3E2E1A" stroke-width="3"/>
-            <text x="95" y="36" font-size="44" font-weight="900" fill="#3E2E1A" text-anchor="middle" font-family="sans-serif">?</text>
             <circle cx="140" cy="160" r="13" fill="#2b2b2b"/>
             <line x1="142" y1="150" x2="176" y2="186" stroke="#3E2E1A" stroke-width="6" stroke-linecap="round"/>
             <circle cx="128" cy="138" r="27" fill="#FFF9ED" stroke="#3E2E1A" stroke-width="5"/>
